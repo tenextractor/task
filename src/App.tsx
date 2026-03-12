@@ -78,9 +78,9 @@ function App() {
           </tr>
           {users.map((user) => (
             <tr key={user.id}>
-              <td>{user.name}</td>
-              <td>{user.email}</td>
-              <td>{user.phone}</td>
+              <td>{user.name || "N/A"}</td>
+              <td>{user.email || "N/A"}</td>
+              <td>{user.phone || "N/A"}</td>
             </tr>
           ))}
         </table>
